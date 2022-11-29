@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>站点 on Jay&#39;s blog</title>
+    <link>https://heelie.github.io/categories/%E7%AB%99%E7%82%B9/</link>
+    <description>Recent content in 站点 on Jay&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 28 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://heelie.github.io/categories/%E7%AB%99%E7%82%B9/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me</title>
+      <link>https://heelie.github.io/about/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://heelie.github.io/about/</guid>
+      <description>欢迎来到小站！ 我是一名90后软件开发工程师，轻度35岁焦虑症患者 2016年入行开始写php，期间因为公司转型为了业务写过java，但是学不到</description>
+    </item>
+    
+    <item>
+      <title>友情链接</title>
+      <link>https://heelie.github.io/friends/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://heelie.github.io/friends/</guid>
+      <description>None</description>
+    </item>
+    
+  </channel>
+</rss>
