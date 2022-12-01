@@ -5,7 +5,8 @@
 
 这次总算是下定了决心，花费了大概一天时间吧，选择了`Hugo`+`Github Pages`的形式弄了这个博客
 
-这样的好处就是，无需任何花费，且写作形式是markdown比较方便，平常就是`hugo server`写作，写完提交到 github ，接着 github action 自动部署到 github pages 就完事了
+这样的好处就是，无需任何花费，且写作形式是markdown比较方便，平常就是`hugo server`写作，写完提交到 github ，接着 github action
+自动部署到 github pages 就完事了
 
 坏处就是，站点在github，访问起来比较慢，偶尔还会直接被墙，域名也是github的子域名
 
