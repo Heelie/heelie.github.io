@@ -28,7 +28,8 @@ Windows需要安装`extended`版本，主题需要
 - 安装Hugo: https://gohugo.io/installation/
 - 安装Git: https://git-scm.com/
 
-### 创建站点
+## 创建站点
+
 ```shell
 hugo new site blog
 cd blog
@@ -37,7 +38,8 @@ git init
 git submodule add https://github.com/hugo-fixit/FixIt.git themes/FixIt
 ```
 
-> **目录结构**
+### 目录结构
+
 ```text
 blog
 ├── archetypes      # 配置文章模板
@@ -51,8 +53,8 @@ blog
 └── themes          # 主题目录
 ```
 
-> **config.toml详细配置**
-> 
+### config.toml详细配置
+
 > 主题给的默认配置怎么说呢，感觉坑有点多，踩了好久，这份配置文件结合了主题本身的配置，主题作者的配置，和一个网友的配置(网友已经忘记是谁了)
 
 ```toml
@@ -953,14 +955,14 @@ preserveTaxonomyNames = true
 评论系统参数配置：params.page.comment.giscus
 {{< /admonition >}}
 
-### 创建文章
+## 创建文章
 ```shell
 hugo new posts/file.md
 ```
 
 > 随后可以编辑`posts/file.md`文件，头参数中修改`draft = false`，书写markdown格式文本即可
 
-### 本地启动
+## 本地启动
 
 ```shell
 hugo server
@@ -972,7 +974,7 @@ hugo server
 hugo server --environment production
 ```
 
-### 本地构建生成静态文件
+## 本地构建生成静态文件
 
 ```
 hugo -v --gc --minify
@@ -980,7 +982,7 @@ hugo -v --gc --minify
 
 生成的供部署的文件默认在`public`目录下
 
-### 配置评论系统
+## 配置评论系统
 
 [giscus](https://giscus.app/zh-CN) 是由 [GitHub Discussions](https://docs.github.com/en/discussions) 驱动的评论系统
 
@@ -1021,7 +1023,7 @@ hugo -v --gc --minify
    
 5. 最后把参数填入配置文件，不出意外文章底部就会出现评论模块了
 
-### 配置搜索引擎
+## 配置搜索引擎
 
 [algolia](https://www.algolia.com/)搜索引擎配置不是很复杂，创建索引，然后拿到所有的API Keys就可以了
 
@@ -1053,13 +1055,13 @@ hugo -v --gc --minify
 
 8. 到此，只需要等上传了records之后就可以做搜索操作了
 
-### 配置百度统计
+## 配置百度统计
 
 登陆到百度统计，创建一个站点，随后点击顶部的使用设置，在站点列表中，点击获取代码
 
 然后在本地博客站点的`assets`目录中创建一个`js/custom.js`，然后把百度统计获取到的代码去掉前后的\<script>标签，写入`custom.js`文件中即可
 
-### 配置自动部署
+## 配置自动部署
 
 在博客根目录创建`.github/workflows/deploy.yml`文件
 
