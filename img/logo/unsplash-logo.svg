@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="-9 -9 50 50" version="1.1"
-     aria-labelledby="unsplash-home" aria-hidden="false">
-    <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" aria-hidden="false" aria-labelledby="unsplash-home" version="1.1" viewBox="-9 -9 50 50"><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"/></svg>
