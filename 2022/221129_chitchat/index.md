@@ -20,5 +20,5 @@
 ---
 
 > 作者: [Jay](https://github.com/Heelie)  
-> URL: https://heelie.github.io/2022/1129_chitchat/  
+> URL: https://heelie.github.io/2022/221129_chitchat/  
 

@@ -1,4 +1,4 @@
-# 记录搭建博客的详细步骤
+# Hugo博客部署详细过程
 
 
 > 博客差不多弄完了（主题还有很多功能配置有待发现），完整记录下整个过程吧，方便同样想搭建自己的博客的朋友参考，也方便自己后面有些操作忘记了再看吧
@@ -1140,5 +1140,5 @@ algolia相关的参数在上面都已经获取到了，其中`PERSONAL_TOKEN`为
 ---
 
 > 作者: [Jay](https://github.com/Heelie)  
-> URL: https://heelie.github.io/2022/1201_create_blog_step/  
+> URL: https://heelie.github.io/2022/221201_create_blog_step/  
 
