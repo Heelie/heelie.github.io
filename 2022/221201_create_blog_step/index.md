@@ -1001,7 +1001,7 @@ hugo -v --gc --minify
 
 4. 通过github提供的[graphQL API](https://docs.github.com/en/graphql/overview/explorer)查询剩下俩个参数
 
-   ![github_graphql_overview_explorer](/img/1201/github_graphql_overview_explorer.png)
+   ![github_graphql_overview_explorer](/img/22/12/01/github_graphql_overview_explorer.png)
 
    > 图片看不清，或者左边不知道怎么选择，可以直接复制下面的把name改为自己的仓库即可
    
@@ -1029,29 +1029,29 @@ hugo -v --gc --minify
 
 1. Github一键登录
 
-   ![algolia_login](/img/1201/algolia_login.png)
+   ![algolia_login](/img/22/12/01/algolia_login.png)
 
 2. 登陆之后跳转到仪表盘界面，留意一下有一个选项叫`API Keys`，点击左下角 Settings 
 
-   ![algolia_dashboard](/img/1201/algolia_dashboard.png)
+   ![algolia_dashboard](/img/22/12/01/algolia_dashboard.png)
 
 3. 设置界面选择 Applications 
 
-   ![algolia_settings](/img/1201/algolia_settings.png)
+   ![algolia_settings](/img/22/12/01/algolia_settings.png)
 
 4. Applications界面应该默认就已经有了一个 application ，直接改名就可以使用了，或者不改名都行
 
-   ![algolia_applications](/img/1201/algolia_applications.png)
+   ![algolia_applications](/img/22/12/01/algolia_applications.png)
 
 5. 修改完名称之后点击左下角 Settings 上的 Data Sources ，选择 Indices
 
-   ![algolia_data_sources](/img/1201/algolia_data_sources.png)
+   ![algolia_data_sources](/img/22/12/01/algolia_data_sources.png)
 
 6. 选择 Create Index 创建一个索引(配置参数要用，需要记录下来)
 
 7. 然后回到首页，点击上面提到的 API Keys ，拿到 `Application ID`、`Search-Only API Key`、`Admin API Key`，其中创建的索引、`Application ID`和`Search-Only API Key`需要填入配置文件，因为algolia的records需要自己上传，所以`Admin API Key`在做 Github Action 自动上传records时需要用到
 
-   ![algolia_api_keys](/img/1201/algolia_api_keys.png)
+   ![algolia_api_keys](/img/22/12/01/algolia_api_keys.png)
 
 8. 到此，只需要等上传了records之后就可以做搜索操作了
 
@@ -1113,7 +1113,7 @@ jobs:
 
 yml文件需要的参数配置在对应的仓库设置中
 
-![github_settings_secrets_actions](/img/1201/github_settings_secrets_actions.png)
+![github_settings_secrets_actions](/img/22/12/01/github_settings_secrets_actions.png)
 
 algolia相关的参数在上面都已经获取到了，其中`PERSONAL_TOKEN`为github个人设置中生成的token
 
@@ -1121,15 +1121,15 @@ algolia相关的参数在上面都已经获取到了，其中`PERSONAL_TOKEN`为
 
 1. 点击Generate new token
 
-   ![github_settings_tokens](/img/1201/github_settings_tokens.png)
+   ![github_settings_tokens](/img/22/12/01/github_settings_tokens.png)
 
 2. Note随便写，Expiration闲麻烦的话直接选择No expiration（选择其他项需要记住按时更新token，不然token过期失效了自动部署脚本就会部署失败了），最后勾选workflow项
 
-   ![github_new_personal_access_token](/img/1201/github_new_personal_access_token.png)
+   ![github_new_personal_access_token](/img/22/12/01/github_new_personal_access_token.png)
 
 3. 然后直接滑到最后点击 Generate token ，点击之后一定要复制保存生成的token，离开页面之后就无法查看了，然后把token保存到仓库配置PERSONAL_TOKEN即可
 
-   ![github_create_personal_access_token](/img/1201/github_create_personal_access_token.png)
+   ![github_create_personal_access_token](/img/22/12/01/github_create_personal_access_token.png)
 
 <br/>
 
