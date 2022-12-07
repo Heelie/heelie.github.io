@@ -68,5 +68,5 @@ docker compose up -d
 ---
 
 > 作者: [Jay](https://github.com/Heelie)  
-> URL: https://heelie.github.io/2022/221204_learn_rabbitmq/  
+> URL: https://heelie.github.io/2022/221204_learn_rabbitmq_01/  
 
