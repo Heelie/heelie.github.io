@@ -55,8 +55,8 @@ docker compose up -d
 - Internal：Exchange的参数，参数类型为boolean，表示不能对这个Exchange发送消息，但可以通过管理后台发送消息
 - noWait：Exchange、Queue、QueueBind都有的参数，类型为boolean，表示无需等待，操作请求发出去不用服务端的返回值，直接进行下一步
 - Exclusive：Queue的参数，类型为boolean，表示为私有、独占队列，只对创建该队列的用户可见，其它用户无法访问
-- Mandatory：Publish时候的参数，类型为boolean，表示告诉rabbitmq，如果消息不可路由，应该将消息返回给发送者，并通知失败，且仅通知失败。
-- Immediate
+- Mandatory：Publish时候的参数，类型为boolean，表示告诉服务器，如果消息不可路由，应该将消息返回给发送者，并通知失败，且仅通知失败。
+- ~~Immediate：Publish时候的参数，类型为boolean，表示告诉服务器，如果该消息关联的Queue上有消费者，则马上将消息投递给它，如果所有Queue都没有消费者，直接把消息返还给生产者，不用将消息入队列等待消费者（rabbitmq 3.0之后删除了该参数）~~
 
 ## 五种消息模型
 - 普通模型
