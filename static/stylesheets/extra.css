@@ -1,0 +1,48 @@
+/* 使用完全原生的 Material 主题样式 */
+.md-typeset p img {
+    border: 0 solid #ddd;
+    box-shadow: 0 0 30px #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.md-typeset h1 {
+    color: #000000;
+    font-size: 2em;
+    line-height: 1.3;
+    margin: 0 0 1.25em;
+    font-weight: 400;
+}
+
+.md-typeset h2 {
+    color: #000000;
+    font-size: 1.8em;
+    line-height: 1.3;
+    margin: 0 0 1.25em;
+    font-weight: 400;
+}
+
+/* Logo 自适应主题模式 - 使用不同的 logo 文件 */
+
+/* 隐藏原始 logo */
+.md-header .md-header__button.md-logo img {
+    display: none !important;
+}
+
+/* 浅色模式：显示黑色 logo */
+.md-header .md-header__button.md-logo::after {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url("../img/redhat-white.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 深色模式：显示白色 logo */
+[data-md-color-scheme="slate"] .md-header .md-header__button.md-logo::after {
+    background-image: url("../img/redhat-black.svg");
+}
+
